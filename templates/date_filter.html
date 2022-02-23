@@ -1,0 +1,11 @@
+<div class="m-1 col-5 p-2 text-left border rounded">
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>Date From</p>
+        <input type="datetime-local" name="date_from" id="date_from">
+        <p>Date To</p>
+        <input type="datetime-local" name="date_to" id="date_to">
+        <br>
+        <input type="submit" value="Send Data">
+    </form>
+</div>

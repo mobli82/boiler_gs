@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block stats %}
+<div class="p-1">
+    <div id="chart2" class="m-1 col-5 rounded">
+        <span class="badge rounded-pill bg-success">CO ON</span>
+        <span class="badge rounded-pill bg-success">CWU1 ON</span>
+        <span class="badge rounded-pill bg-success">CWU2 ON</span>
+        <span class="badge rounded-pill bg-success">CYCLE ON</span>
+        <span class="badge rounded-pill bg-success">FEEDER ON</span>
+        <span class="badge rounded-pill bg-success">FAN ON</span>
+        <span class="badge rounded-pill bg-success">TERMOSTAT ON</span>
+    </div>
+    <div id="chart1" class="m-1 col-5 p-3 bg-light rounded "></div>
+    {% include "date_filter.html" %}
+</div>
+{% endblock stats %}
